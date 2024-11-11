@@ -18,8 +18,8 @@ public class DetailPage {
     page.click(inventoryList);
   }
   public void detailText(String actualText){
-//    assertEquals(textDetail,actualText);
     textDetail= page.textContent("//*[contains(text(),'Sauce Labs Backpack')]");
+    assertEquals(textDetail,actualText);
     System.out.println(textDetail);
 
   }

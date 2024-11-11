@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Example Suite">
+    <test name="Login Tests">
+        <groups>
+            <run>
+                <include name="detail-page"/>
+                <include name="checkout"/>
+                <include name="cart"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.DetailPageList"/>
+        </classes>
+    </test>
+
+</suite>
+
+<!--        Nama Kelompok : Ceria-->
+<!--        Nama Anggota :-->
+<!--        Nila Wilda-->
+<!--        Hesti Widya-->
+<!--        Fany Liaw-->
+<!--        Melissa Panjaitan-->
