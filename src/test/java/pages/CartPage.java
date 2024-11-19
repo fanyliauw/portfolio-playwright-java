@@ -9,6 +9,8 @@ public class CartPage {
   private final String continueshoppingButton = "//button[@id='continue-shopping']";
   private final String removeButton = "//button[@id='remove-sauce-labs-backpack']";
 
+  private final String negativeResult = "//div[@data-test='inventory-item-name']";
+
   public CartPage(Page page) {
     this.page = page;
   }
@@ -27,5 +29,10 @@ public class CartPage {
 
   public void clickRemoveButton() {
     page.click(removeButton);
+  }
+
+  public void resultRemove(){
+    page.isHidden(negativeResult);
+//    System.out.println(negativeResult);
   }
 }
